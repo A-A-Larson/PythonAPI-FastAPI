@@ -17,16 +17,16 @@ Edit HTML files as needed to test different POST calls.
 from each endpoint.
 
 ### 2. Comment out:
-# tokens = []
+tokens = []
 
-# @app.on_event('startup')
-# async def database_connect():                          #
-#     await database.connect()                           #
-#     reply = await database.fetch_all(get_all_tokens()) # Connection for use with tokens
-#     global tokens                                      #
-#     tokens = convert_reply_to_token_list(reply)        #
+ @app.on_event('startup')
+ async def database_connect():                          
+     await database.connect()                           
+     reply = await database.fetch_all(get_all_tokens())  Connection for use with tokens
+     global tokens                                      
+     tokens = convert_reply_to_token_list(reply)        
 
 ### 3. Uncomment: 
-@app.on_event('startup')      #
-async def database_connect(): # Connection for use with Swagger
-    await database.connect()  #
+@app.on_event('startup')      
+async def database_connect():  Connection for use with Swagger
+    await database.connect()  
