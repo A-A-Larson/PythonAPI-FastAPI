@@ -32,7 +32,7 @@ async def database_connect():
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await database.connect()  
 
 ### Packages:
-pip install fastapi
+pip install fastapi /n
 pip install uvicorn[standard]
 pip install databases[sqlite]
 pip install httpx
