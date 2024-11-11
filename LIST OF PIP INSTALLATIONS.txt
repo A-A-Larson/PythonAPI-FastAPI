@@ -1,0 +1,20 @@
+
+pip install fastapi
+pip install uvicorn[standard]
+
+uvicorn main_controller:app --reload (command to run api)
+
+(for database creator file)
+pip install databases[sqlite]
+
+pip install httpx
+pip install pytest
+
+pytest -Wi::DeprecationWarning -s (-Wi::DeprecationWarning flag is for leaving out warnings about deprecated features that are being used, and -s is a flag to print any print coded msgs in the test file on the output)
+
+
+
+
+
+
+
