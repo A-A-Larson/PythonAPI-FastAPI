@@ -21,10 +21,10 @@ tokens = []
 
  @app.on_event('startup')
  async def database_connect():                          
-     await database.connect()                           
-     reply = await database.fetch_all(get_all_tokens())  Connection for use with tokens
-     global tokens                                      
-     tokens = convert_reply_to_token_list(reply)        
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await database.connect()                           
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reply = await database.fetch_all(get_all_tokens())  Connection for use with tokens
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global tokens                                      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tokens = convert_reply_to_token_list(reply)        
 
 ### 3. Uncomment: 
 @app.on_event('startup')      
