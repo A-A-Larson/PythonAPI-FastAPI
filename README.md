@@ -10,8 +10,8 @@ Use HTML files in main directory to test functionality.
 Edit HTML files as needed to test different POST calls.
 
 ## To make functional in Swagger:
-### 1.
-*Remove "request: Request" from endpoint functions and comment out:
+### 1. Remove/Comment out:
+Remove "request: Request" from endpoint functions and comment out:
 "if request.headers['Authorization'] not in tokens:
         raise HTTPException(status_code=status.HTTP_402_PAYMENT_REQUIRED, detail=errorUnauthorizedRequest)"
 from each endpoint.
